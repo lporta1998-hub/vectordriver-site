@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="vectorArrowGradient" x1="8" y1="52" x2="56" y2="10" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8590C"/>
+      <stop offset="1" stop-color="#FFB238"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#1C1815"/>
+  <line x1="6" y1="38" x2="12" y2="32" stroke="#FFB238" stroke-width="2.4" stroke-linecap="round" opacity="0.35"/>
+  <line x1="10" y1="46" x2="18" y2="38" stroke="#FFB238" stroke-width="2.6" stroke-linecap="round" opacity="0.5"/>
+  <path d="M12.0,40.82 L33.51,19.31 L26.62,12.43 L52.0,12.0 L51.57,37.38 L44.69,30.49 L23.18,52.0 Z" fill="url(#vectorArrowGradient)"/>
+</svg>
