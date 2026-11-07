@@ -1,4 +1,4 @@
-/* Foglio di stile del sito vectordriver.app. Lo copia Tools/GeneraSito.py. */
+/* Foglio di stile del sito vectordriver.lucaporta.dev. Lo copia Tools/GeneraSito.py. */
 
 :root {
   --sfondo: #F7F5F2;
@@ -195,14 +195,14 @@ mark.manca {
   margin: 0 0 8px !important;
 }
 
-.altro, .riservatezza, .prezzi, .contatti { border-top: 1px solid var(--bordo); padding: 56px 0; }
+.dispositivi, .altro, .riservatezza, .prezzi, .contatti { border-top: 1px solid var(--bordo); padding: 56px 0; }
 .griglia {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 12px;
   margin-top: 24px;
 }
-.griglia div, .piano {
+.griglia div {
   background: var(--superficie);
   border: 1px solid var(--bordo);
   border-radius: 16px;
@@ -217,21 +217,27 @@ mark.manca {
 
 .prezzi { text-align: center; }
 .prezzi .lead { max-width: 32em; margin: 0 auto 28px; }
-.piani {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  max-width: 560px;
-  margin: 0 auto 20px;
-}
-.piano p { margin: 0; color: var(--testo-tenue); font-size: 15px; }
-.piano .cifra { font-size: 34px; font-weight: 700; letter-spacing: -0.02em; color: var(--testo); margin: 4px 0; }
-.cifra span { font-size: 16px; font-weight: 500; color: var(--testo-tenue); }
-.piano.evidenza { border: 2px solid var(--accento); background: var(--accento-sfondo); }
 .nota-piccola { font-size: 14px; color: var(--testo-tenue); max-width: 34em; margin: 0 auto; }
 
 .contatti { text-align: center; color: var(--testo-tenue); }
 .contatti p { margin: 0; }
+
+.dispositivi { text-align: center; }
+.dispositivi .lead { max-width: 34em; margin: 0 auto 36px; }
+.dispositivi figure { margin: 0 auto 36px; }
+.dispositivi img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--bordo);
+  box-shadow: 0 24px 60px rgb(40 25 10 / 0.18), 0 4px 12px rgb(40 25 10 / 0.08);
+}
+.dispositivi .mac { max-width: 960px; }
+.dispositivi .mac img { border-radius: 12px; }
+.dispositivi .ipad { max-width: 760px; }
+/* La cornice scura fa leggere lo schermo come un iPad. */
+.dispositivi .ipad img { border: 12px solid #1C1815; border-radius: 28px; }
+.dispositivi figcaption { margin-top: 14px; font-size: 14px; color: var(--testo-tenue); }
 
 @media (max-width: 760px) {
   .eroe, .funzione { grid-template-columns: 1fr; text-align: center; padding: 40px 0; }
