@@ -180,6 +180,9 @@ mark.manca {
   font-size: 15px;
   font-weight: 600;
 }
+a.pastiglia { text-decoration: none; transition: opacity 0.15s; }
+a.pastiglia:hover { opacity: 0.85; }
+a.pastiglia:focus-visible { outline: 2px solid var(--accento); outline-offset: 3px; }
 .piattaforme { color: var(--testo-tenue); font-size: 15px; }
 
 .funzione { border-top: 1px solid var(--bordo); }
@@ -217,6 +220,7 @@ mark.manca {
 
 .prezzi { text-align: center; }
 .prezzi .lead { max-width: 32em; margin: 0 auto 28px; }
+.prezzi .disponibile { justify-content: center; margin-top: 28px; }
 .nota-piccola { font-size: 14px; color: var(--testo-tenue); max-width: 34em; margin: 0 auto; }
 
 .contatti { text-align: center; color: var(--testo-tenue); }
