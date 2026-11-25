@@ -11,59 +11,76 @@
 <link rel="stylesheet" href="../stile.css">
 </head>
 <body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
 <header class="testata">
   <a class="marchio" href="../"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12.0,40.82 L33.51,19.31 L26.62,12.43 L52.0,12.0 L51.57,37.38 L44.69,30.49 L23.18,52.0 Z" fill="currentColor"/></svg><span>Vector Driver</span></a>
+  <nav aria-label="Principale">
+    <a href="../supporto/">Assistenza</a>
+    <a class="scarica" href="https://apps.apple.com/it/app/id6828247352">Scarica</a>
+  </nav>
 </header>
-<main class="documento">
+<main id="contenuto" class="documento">
 <h1>Informativa privacy — Vector Driver</h1>
-<p class="aggiornato"><strong>Ultimo aggiornamento: 31 agosto 2026</strong></p>
+<p class="aggiornato"><strong>Ultimo aggiornamento: 19 novembre 2026</strong></p>
 <h2 id="in-breve">In breve</h2>
-<p>Vector Driver non raccoglie i tuoi dati. Non esiste un nostro server, non c'è un account da creare, non c'è tracciamento, non ci sono strumenti di analisi né pubblicità. Tutto ciò che inserisci resta sul tuo dispositivo e, se attivi la sincronizzazione, nel <strong>tuo</strong> database privato iCloud, al quale non abbiamo accesso.</p>
+<p>Vector Driver non raccoglie i tuoi dati. Non esiste un nostro server, non c'è un account da creare, non c'è tracciamento, non ci sono strumenti di analisi né pubblicità. Tutto ciò che inserisci resta sul tuo dispositivo e, se attivi la sincronizzazione, nel <strong>tuo</strong> spazio personale — il database privato iCloud su iPhone, iPad e Mac, una cartella nascosta del tuo Google Drive su Android — al quale non abbiamo accesso.</p>
 <h2 id="1-titolare-del-trattamento">1. Titolare del trattamento</h2>
 <p><strong>Luca Porta</strong>, persona fisica. Per ogni questione relativa a questa informativa: <a href="mailto:support@lucaporta.dev">support@lucaporta.dev</a>.</p>
 <h2 id="2-quali-dati-tratta-l-app-e-dove-restano">2. Quali dati tratta l'app, e dove restano</h2>
 <p>Dentro l'app inserisci:</p>
 <ul><li><strong>il tuo profilo:</strong> ragione sociale, nome e cognome, partita IVA, codice fiscale, indirizzo, telefono, email, PEC, codice destinatario SdI, IBAN, numero di licenza, iscrizione all'albo e i parametri fiscali che scegli;</li><li><strong>i tuoi clienti:</strong> denominazione, partita IVA, codice fiscale, indirizzo, referente, telefono, email, PEC, codice SdI;</li><li><strong>la tua attività:</strong> viaggi, veicoli, rifornimenti (con l'eventuale foto dello scontrino), costi, manutenzioni, scadenze, fatture e i relativi PDF e XML.</li></ul>
-<p>Questi dati sono trattati <strong>esclusivamente sul tuo dispositivo</strong>. Non transitano da nostri sistemi, per la ragione più semplice: non ne abbiamo. L'app non contiene codice che invii dati a server nostri o di terze parti. Le uniche connessioni di rete sono quelle che i framework di Apple aprono verso Apple stessa — App Store per l'abbonamento, iCloud per la sincronizzazione.</p>
-<h2 id="3-sincronizzazione-icloud">3. Sincronizzazione iCloud</h2>
+<p>Questi dati sono trattati <strong>esclusivamente sul tuo dispositivo</strong> e, se lo scegli, nel tuo spazio iCloud o Google Drive. Non transitano da nostri sistemi, per la ragione più semplice: non ne abbiamo. L'app non contiene codice che invii dati a server nostri.</p>
+<p>Le uniche connessioni di rete sono verso chi fornisce la piattaforma:</p>
+<ul><li>su <strong>iPhone, iPad e Mac</strong>, verso Apple — App Store per l'abbonamento, iCloud per la sincronizzazione;</li><li>su <strong>Android</strong>, verso Google — Google Play per l'abbonamento, Google Drive per la sincronizzazione se la attivi, e il componente ML Kit che legge gli scontrini (§ 5).</li></ul>
+<h2 id="3-sincronizzazione">3. Sincronizzazione</h2>
+<p>### iCloud (iPhone, iPad, Mac)</p>
 <p>Se l'app è configurata per iCloud e hai eseguito l'accesso con il tuo Apple Account, i dati vengono replicati nel <strong>database privato</strong> del tuo account, per allinearli fra i tuoi dispositivi. Quel database è sotto il tuo controllo e nella disponibilità di Apple secondo l'informativa privacy di Apple: <strong>noi non possiamo leggerlo</strong>, perché non è un nostro archivio.</p>
+<p>### Google Drive (Android)</p>
+<p>La sincronizzazione è <strong>spenta finché non la attivi</strong> da <em>Impostazioni → Sincronizzazione</em>. In quel momento scegli un account Google e Google ti chiede di autorizzare l'app. L'autorizzazione riguarda due cose sole:</p>
+<ul><li>la <strong>cartella dei dati dell'app</strong> nel tuo Drive: una cartella nascosta, che non compare fra i tuoi file e che solo Vector Driver può leggere. L'app non vede, e non può vedere, nessun altro tuo file su Drive;</li><li>l'<strong>indirizzo email</strong> dell'account scelto, che l'app mostra nelle impostazioni per ricordarti dove stai sincronizzando. Resta sul dispositivo.</li></ul>
+<p>In quella cartella l'app tiene una copia dell'archivio e degli allegati (foto degli scontrini, PDF delle fatture), per allinearli fra telefono e tablet. La copia occupa spazio del tuo Drive ed è conservata da Google secondo l'informativa privacy di Google: <strong>noi non possiamo leggerla</strong>, perché sta nel tuo account e non in un nostro archivio.</p>
 <p>Se la sincronizzazione non è attiva, i dati restano soltanto sul dispositivo.</p>
 <h2 id="4-cosa-non-facciamo">4. Cosa non facciamo</h2>
-<ul><li><strong>Nessun tracciamento.</strong> Nessun IDFA, nessuna richiesta di App Tracking Transparency, nessun identificativo pubblicitario: non c'è nulla da tracciare.</li><li><strong>Nessuna statistica di utilizzo.</strong> Non sappiamo quali schermate apri, quanto usi l'app, se la usi.</li><li><strong>Nessun SDK di terze parti.</strong> L'app non ha dipendenze esterne: nessun strumento di analisi, nessun servizio di crash reporting, nessuna pubblicità.</li><li><strong>Nessuna profilazione</strong> e nessuna decisione automatizzata.</li><li><strong>Nessuna cessione di dati</strong> a chicchessia, a nessun titolo.</li></ul>
-<p>Lo stesso è dichiarato nel <em>Privacy Manifest</em> incluso nell'app (<code>PrivacyInfo.xcprivacy</code>) e nelle etichette privacy della scheda App Store.</p>
-<h2 id="5-il-ruolo-di-apple">5. Il ruolo di Apple</h2>
-<p>Alcuni trattamenti sono di Apple e non passano da noi:</p>
+<ul><li><strong>Nessun tracciamento.</strong> Nessun identificativo pubblicitario — né IDFA su Apple, né ID pubblicità su Android — e nessuna richiesta di App Tracking Transparency: non c'è nulla da tracciare.</li><li><strong>Nessuna statistica di utilizzo per noi.</strong> Non sappiamo quali schermate apri, quanto usi l'app, se la usi.</li><li><strong>Nessun SDK di analisi, di crash reporting o di pubblicità.</strong> Su iPhone, iPad e Mac l'app non ha dipendenze esterne. Su Android usa solo librerie di Google per funzioni che chiedi tu: Google Play Billing per l'abbonamento, Google Play services per l'accesso a Drive, ML Kit per leggere gli scontrini.</li><li><strong>Nessuna profilazione</strong> e nessuna decisione automatizzata.</li><li><strong>Nessuna cessione di dati</strong> a chicchessia, a nessun titolo.</li></ul>
+<p>Lo stesso è dichiarato nel <em>Privacy Manifest</em> incluso nell'app per Apple (<code>PrivacyInfo.xcprivacy</code>), nelle etichette privacy della scheda App Store e nella sezione <em>Sicurezza dei dati</em> della scheda Google Play.</p>
+<h2 id="5-il-ruolo-di-apple-e-di-google">5. Il ruolo di Apple e di Google</h2>
+<p>Alcuni trattamenti sono della piattaforma e non passano da noi.</p>
+<p><strong>Apple</strong></p>
 <ul><li><strong>App Store e abbonamenti.</strong> L'acquisto, il rinnovo e l'eventuale rimborso sono gestiti da Apple. Da Apple riceviamo esclusivamente dati di vendita aggregati e anonimi: <strong>non sappiamo chi sei</strong>, né quando o se hai acquistato.</li><li><strong>iCloud.</strong> Se la sincronizzazione è attiva, Apple conserva la copia sincronizzata del tuo archivio nel tuo spazio personale.</li></ul>
-<p>Per questi trattamenti fa fede l'informativa privacy di Apple.</p>
+<p><strong>Google</strong></p>
+<ul><li><strong>Google Play e abbonamenti.</strong> L'acquisto, il rinnovo e il pagamento sono gestiti da Google. Per ogni ordine Google ci mette a disposizione i dati necessari a gestirlo e a calcolarne le imposte — numero d'ordine, prodotto, data, importo, Paese ed eventualmente provincia e CAP — <strong>non il tuo nome né il tuo indirizzo email</strong>. Li usiamo solo per l'assistenza, i rimborsi e gli obblighi contabili, e non li possiamo collegare ai dati che tieni nell'app.</li><li><strong>Google Drive.</strong> Se la sincronizzazione è attiva, Google conserva la copia sincronizzata nel tuo account (§ 3).</li><li><strong>ML Kit.</strong> Quando fai leggere uno scontrino, il testo viene riconosciuto <strong>sul dispositivo</strong>: la foto non viene inviata a nessuno. Il componente ML Kit di Google invia però a Google dati tecnici sul proprio funzionamento — modello e sistema del dispositivo, versione dell'app, prestazioni ed eventuali errori del riconoscimento, con un identificativo dell'installazione che non è legato alla tua persona — e ne riceve aggiornamenti. Li tratta Google, come descritto nella sua documentazione per gli sviluppatori.</li><li><strong>Backup di Android.</strong> Se sul telefono è attivo il backup di Google, Android vi include l'archivio dell'app e la data di inizio della prova, così reinstallando l'app con lo stesso account ritrovi i tuoi dati. È una funzione del sistema, che gestisci dalle impostazioni del telefono.</li></ul>
+<p>Per questi trattamenti fanno fede le informative privacy di Apple e di Google.</p>
 <h2 id="6-i-dati-di-terzi-che-inserisci-tu">6. I dati di terzi che inserisci tu</h2>
 <p>Nell'app inserisci dati di altre persone e imprese: i tuoi committenti, i loro referenti, i loro recapiti.</p>
 <p>Rispetto a quei dati <strong>il titolare del trattamento sei tu</strong>, non noi. Sei tu a deciderne finalità e modalità, e restano a tuo carico gli obblighi che il GDPR pone in capo al titolare: informativa agli interessati, base giuridica, tempi di conservazione, riscontro alle loro richieste. Noi quei dati non li vediamo e non li trattiamo in alcun modo.</p>
 <p>Lo stesso vale per i dati contenuti nelle fatture, nei PDF e nei file XML che generi ed esporti.</p>
 <h2 id="7-permessi-richiesti-dall-app">7. Permessi richiesti dall'app</h2>
-<ul><li><strong>Fototeca</strong> — solo se scegli di allegare la foto di uno scontrino. L'app usa il selettore fotografico di sistema, che gira in un processo separato: l'app riceve unicamente l'immagine che hai selezionato e <strong>non ha accesso alla tua libreria</strong>.</li><li><strong>Notifiche</strong> — solo se le autorizzi, per i promemoria delle scadenze. Sono notifiche <strong>locali</strong>, generate dal dispositivo: nessun server, nessun dato in uscita.</li></ul>
+<ul><li><strong>Foto</strong> — solo se scegli di allegare la foto di uno scontrino. L'app usa il selettore fotografico di sistema, che gira in un processo separato: l'app riceve unicamente l'immagine che hai selezionato e <strong>non ha accesso alla tua libreria</strong>.</li><li><strong>Notifiche</strong> — solo se le autorizzi, per i promemoria delle scadenze. Sono notifiche <strong>locali</strong>, generate dal dispositivo: nessun server, nessun dato in uscita.</li><li><strong>Su Android, inoltre:</strong> l'accesso a Internet, per l'abbonamento e la sincronizzazione, e l'avvio dopo il riavvio del telefono, solo per rimettere in calendario il controllo giornaliero delle scadenze.</li></ul>
 <p>L'app non accede a posizione, rubrica, fotocamera, microfono, calendario o dati sanitari.</p>
 <h2 id="8-conservazione-e-cancellazione">8. Conservazione e cancellazione</h2>
-<p>I dati restano finché sei tu a tenerli. Puoi cancellare i singoli elementi o l'intero archivio da <em>Impostazioni → Cancella tutti i dati</em>; se la sincronizzazione è attiva, la cancellazione si propaga agli altri dispositivi. Disinstallando l'app l'archivio locale viene rimosso con essa; l'eventuale copia iCloud si elimina dalle impostazioni di sistema del tuo Apple Account.</p>
+<p>I dati restano finché sei tu a tenerli. Puoi cancellare i singoli elementi o l'intero archivio da <em>Impostazioni → Cancella tutti i dati</em>; se la sincronizzazione è attiva, la cancellazione si propaga agli altri dispositivi e alla copia in iCloud o in Google Drive.</p>
+<p>Disinstallando l'app l'archivio locale viene rimosso con essa. L'eventuale copia sincronizzata resta nel tuo account finché non la elimini:</p>
+<ul><li><strong>iCloud:</strong> dalle impostazioni di sistema del tuo Apple Account;</li><li><strong>Google Drive:</strong> dal sito di Google Drive, <em>Impostazioni → Gestisci app → Vector Driver → Elimina dati app nascosti</em>. Puoi anche revocare l'autorizzazione dalla pagina <em>Sicurezza</em> del tuo account Google.</li></ul>
 <p>Il backup che esporti è un file tuo, sotto il tuo controllo: custodiscilo con cura, perché contiene i tuoi dati fiscali e i recapiti dei tuoi clienti.</p>
 <h2 id="9-sicurezza">9. Sicurezza</h2>
-<p>I dati sono protetti dalla cifratura del dispositivo e dalla sandbox applicativa di iOS e macOS. La data di inizio della prova gratuita è conservata nel portachiavi di sistema. La copia iCloud è protetta dai meccanismi di Apple.</p>
+<p>I dati sono protetti dalla cifratura del dispositivo e dalla sandbox applicativa del sistema operativo — iOS, macOS o Android. La data di inizio della prova gratuita è conservata nel portachiavi di sistema su Apple, e fra i dati dell'app su Android. Le copie in iCloud e in Google Drive sono protette dai meccanismi di Apple e di Google, e i dati vi arrivano solo su connessioni cifrate.</p>
 <p>Non esistendo nostri server, non esiste un archivio centrale che possa essere violato: è la forma di sicurezza più solida che potessimo darti.</p>
 <h2 id="10-trasferimenti-fuori-dall-unione-europea">10. Trasferimenti fuori dall'Unione europea</h2>
-<p>Noi non trasferiamo alcun dato. Se usi iCloud, l'infrastruttura è di Apple e i relativi trasferimenti sono disciplinati dall'informativa e dalle garanzie di Apple.</p>
+<p>Noi non trasferiamo alcun dato. Se usi iCloud, Google Drive o gli store di Apple e di Google, l'infrastruttura è loro e i relativi trasferimenti sono disciplinati dalle loro informative e garanzie.</p>
 <h2 id="11-i-tuoi-diritti">11. I tuoi diritti</h2>
 <p>Il GDPR (artt. 15–22) ti riconosce i diritti di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione. Poiché non deteniamo dati che ti riguardano, questi diritti si esercitano direttamente:</p>
-<ul><li><strong>sui dati nell'app:</strong> sono già tutti a tua disposizione — puoi consultarli, modificarli, esportarli in JSON, CSV e PDF, e cancellarli dal dispositivo;</li><li><strong>sui dati di acquisto e sulla copia iCloud:</strong> nei confronti di Apple, tramite <a href="https://privacy.apple.com">privacy.apple.com</a>.</li></ul>
+<ul><li><strong>sui dati nell'app:</strong> sono già tutti a tua disposizione — puoi consultarli, modificarli, esportarli in JSON, CSV e PDF, e cancellarli dal dispositivo;</li><li><strong>sui dati di acquisto e sulle copie sincronizzate:</strong> nei confronti di Apple, tramite <a href="https://privacy.apple.com">privacy.apple.com</a>, o di Google, dalle impostazioni del tuo account Google;</li><li><strong>sui dati degli ordini Google Play che riceviamo:</strong> scrivendoci all'indirizzo in fondo.</li></ul>
 <p>Se ritieni che un trattamento violi la normativa puoi rivolgerti al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it">www.garanteprivacy.it</a>).</p>
 <h2 id="12-minori">12. Minori</h2>
 <p>L'app è uno strumento professionale, destinato a chi esercita un'attività di autotrasporto. Non è rivolta a minori e non ne raccoglie consapevolmente i dati.</p>
 <h2 id="13-modifiche-a-questa-informativa">13. Modifiche a questa informativa</h2>
-<p>Le modifiche sono pubblicate a questo indirizzo, con la data di aggiornamento in testa. Se un giorno l'app dovesse trattare i dati in modo diverso da come è descritto qui — cosa che oggi non è prevista — l'informativa sarà aggiornata <strong>prima</strong> che la nuova funzione entri in servizio.</p>
+<p>Le modifiche sono pubblicate a questo indirizzo, con la data di aggiornamento in testa. Se un giorno l'app dovesse trattare i dati in modo diverso da come è descritto qui, l'informativa sarà aggiornata <strong>prima</strong> che la nuova funzione entri in servizio.</p>
 <h2 id="14-contatti">14. Contatti</h2>
 <address><strong>Luca Porta</strong><br><a href="mailto:support@lucaporta.dev">support@lucaporta.dev</a></address>
 </main>
 <footer class="piede">
   <span>© 2026 Luca Porta</span>
-  <nav><a href="../privacy/" aria-current="page">Privacy</a><a href="../termini/">Termini</a><a href="../supporto/">Assistenza</a></nav>
+  <nav aria-label="Documenti"><a href="../privacy/" aria-current="page">Privacy</a><a href="../termini/">Termini</a><a href="../supporto/">Assistenza</a></nav>
 </footer>
 </body>
 </html>

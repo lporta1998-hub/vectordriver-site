@@ -4,129 +4,172 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vector Driver</title>
-<meta name="description" content="Il gestionale per chi guida per lavoro: viaggi, carburante, costi e fattura elettronica su iPhone, iPad e Mac.">
+<meta name="description" content="Il gestionale per chi guida per lavoro: viaggi, carburante, costi e fattura elettronica su iPhone, iPad, Mac e Android.">
 <meta name="color-scheme" content="light dark">
 <meta name="apple-itunes-app" content="app-id=6828247352">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="stile.css">
 </head>
 <body>
+<a class="salta" href="#contenuto">Vai al contenuto</a>
 <header class="testata">
   <a class="marchio" href=""><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M12.0,40.82 L33.51,19.31 L26.62,12.43 L52.0,12.0 L51.57,37.38 L44.69,30.49 L23.18,52.0 Z" fill="currentColor"/></svg><span>Vector Driver</span></a>
+  <nav aria-label="Principale">
+    <a href="supporto/">Assistenza</a>
+    <a class="scarica" href="https://apps.apple.com/it/app/id6828247352">Scarica</a>
+  </nav>
 </header>
-<main class="home">
+<main id="contenuto" class="home">
 <section class="eroe">
-  <div class="eroe-testo">
-    <img class="icona" src="favicon.svg" alt="" width="88" height="88">
-    <h1>Vector Driver</h1>
-    <p class="sottotitolo">Il gestionale per chi guida per lavoro, in proprio.</p>
-    <p class="lead">Viaggi, carburante, costi, scadenze e fattura elettronica in
-    un'unica app per iPhone, iPad e Mac. Pensata per l'autotrasportatore con uno
-    o due mezzi: tutto il lavoro d'ufficio, senza un ufficio.</p>
-    <p class="disponibile"><a class="pastiglia" href="https://apps.apple.com/it/app/id6828247352">Scarica dall'App Store</a>
-    <span class="piattaforme">iPhone · iPad · Mac</span></p>
+  <h1>Sai quanto ti resta.<br>Viaggio per viaggio.</h1>
+  <p class="sottotitolo">Per chi guida per lavoro: viaggi, pieni, costi e fattura
+  elettronica. Su iPhone, iPad, Mac e Android.</p>
+  <div class="store centrati"><a class="pulsante" href="https://apps.apple.com/it/app/id6828247352">Scarica dall'App Store</a><span class="pulsante in-arrivo" aria-disabled="true">Presto su Google Play</span></div>
+  <p class="prova-breve">Gratis per sette giorni, senza registrazione.</p>
+  <div class="vetrina">
+    <img class="tablet" src="immagini/android-tablet-oggi.webp" width="1600" height="900"
+         alt="Vector Driver su un tablet Android: la giornata con il viaggio Roma–Napoli e i numeri del mese">
+    <img class="telefono" src="immagini/viaggi.jpg" alt="Vector Driver su iPhone: l'elenco dei viaggi con tratta, committente, chilometri, nolo e resa al chilometro" width="570" height="1240" loading="lazy">
   </div>
-  <img class="telefono" src="immagini/viaggi.jpg" alt="L'elenco dei viaggi con tratta, committente, chilometri, nolo e resa al chilometro" width="570" height="1240" loading="lazy">
+  <p class="didascalia">Tablet Android e iPhone · dati di esempio</p>
 </section>
 
-<section class="dispositivi">
-  <p class="occhiello">iPhone · iPad · Mac</p>
-  <h2>In cabina sul telefono, in ufficio sul Mac</h2>
-  <p class="lead">Segni il viaggio dall'iPhone appena scarichi; la sera riprendi
-  conti e fatture sullo schermo grande di iPad o Mac. Con iCloud ritrovi gli
-  stessi dati su ogni dispositivo, senza fare nulla.</p>
-  <figure class="mac">
-    <img src="immagini/mac-analisi.jpg" width="1180" height="780" loading="lazy"
-         alt="Vector Driver sul Mac: il conto economico annuale con ricavi, costi, margine e indicatori al chilometro">
-    <figcaption>Mac · Analisi dell'anno</figcaption>
-  </figure>
-  <figure class="ipad">
-    <img src="immagini/ipad-viaggi.jpg" width="1600" height="1200" loading="lazy"
-         alt="Vector Driver su iPad: la barra laterale con le sezioni e l'elenco dei viaggi del mese">
-    <figcaption>iPad · Elenco dei viaggi</figcaption>
+<section class="fascia numeri">
+  <div class="colonna-testo">
+    <h2>I conti veri, non a occhio.</h2>
+    <p>Da ogni viaggio e da ogni pieno l'app ricava il conto economico del mese,
+    del trimestre o dell'anno: ricavi, carburante, manutenzione, costi fissi e
+    margine. Ricavo e costo al chilometro, punto di pareggio e una stima di
+    quanto accantonare per imposte e contributi.</p>
+  </div>
+  <figure>
+    <img class="telefono" src="immagini/analisi.jpg" alt="Il conto economico annuale su iPhone, con ricavi, costi e margine operativo" width="570" height="1240" loading="lazy">
+    <figcaption>Analisi dell'anno su iPhone · dati di esempio</figcaption>
   </figure>
 </section>
 
-<section class="funzione">
-  <div>
-    <p class="occhiello">Fatturazione</p>
-    <h2>Dai viaggi alla fattura, in un gesto</h2>
-    <p>Selezioni i viaggi completati e non ancora fatturati di un committente, e
-    la fattura è pronta: il file <strong>XML FatturaPA</strong> da caricare sul tuo
-    canale verso lo SdI e il <strong>PDF</strong> da mandare al cliente. Credito
-    aperto e scaduto sempre sotto gli occhi.</p>
+<section class="fattura">
+  <h2>Dal viaggio alla fattura,<br>senza ricopiare niente.</h2>
+  <div class="fattura-corpo">
+    <ol class="passi">
+      <li><h3>Segni il viaggio</h3><p>Tratta, committente, chilometri e nolo,
+      appena scarichi.</p></li>
+      <li><h3>Scegli cosa fatturare</h3><p>L'app ti mostra i viaggi completati
+      e non ancora fatturati di ogni committente.</p></li>
+      <li><h3>La fattura è pronta</h3><p>Il file <strong>XML FatturaPA</strong>
+      da caricare sul tuo canale verso lo SdI e il <strong>PDF</strong> da
+      mandare al cliente.</p></li>
+    </ol>
+    <figure>
+      <img class="telefono" src="immagini/fattura-nuova.jpg" alt="La selezione dei viaggi da fatturare su iPhone, con il totale e il pulsante Crea fattura" width="570" height="1240" loading="lazy">
+      <figcaption>Viaggi da fatturare su iPhone · dati di esempio</figcaption>
+    </figure>
   </div>
-  <img class="telefono" src="immagini/fattura-nuova.jpg" alt="La selezione dei viaggi da fatturare, con il totale e il pulsante Crea fattura" width="570" height="1240" loading="lazy">
+  <p class="nota">L'app genera il file ma non lo trasmette: lo carichi tu sul tuo
+  canale, che sia un intermediario, il portale dell'Agenzia delle Entrate o la PEC.</p>
 </section>
 
-<section class="funzione">
-  <div>
-    <p class="occhiello">Carburante</p>
-    <h2>Il consumo vero del tuo mezzo</h2>
-    <p>Registri il pieno con odometro e foto dello scontrino. Da due pieni
-    consecutivi l'app calcola i km/l reali e ne segue l'andamento: ti accorgi
-    subito se qualcosa non va, e sai quanta IVA sul gasolio recuperi.</p>
+<section class="fascia carburante">
+  <figure>
+    <img class="telefono" src="immagini/android-carburante.webp" alt="Il riepilogo carburante su Android: spesa e litri del mese, consumo medio, IVA recuperabile e il grafico del consumo per pieno" width="600" height="1200" loading="lazy">
+    <figcaption>Carburante su Android · dati di esempio</figcaption>
+  </figure>
+  <div class="colonna-testo">
+    <h2>Il consumo vero del tuo mezzo.</h2>
+    <p>Registri il pieno con odometro e foto dello scontrino: l'app legge da sola
+    litri, prezzo e totale. Da due pieni consecutivi calcola i km/l reali e ne
+    segue l'andamento, così ti accorgi subito se qualcosa non va e sai quanta IVA
+    sul gasolio recuperi.</p>
   </div>
-  <img class="telefono" src="immagini/carburante.jpg" alt="Il grafico del consumo per pieno in km/l e il riepilogo dei rifornimenti" width="570" height="1240" loading="lazy">
 </section>
 
-<section class="funzione">
-  <div>
-    <p class="occhiello">Analisi</p>
-    <h2>Sai quanto ti resta, davvero</h2>
-    <p>Conto economico del mese, del trimestre o dell'anno: ricavi, carburante,
-    manutenzione, costi fissi e margine. Costo e resa al chilometro, punto di
-    pareggio e una stima di quanto accantonare per imposte e contributi.</p>
+<section class="schermi">
+  <h2>In cabina sul telefono,<br>la sera sullo schermo grande.</h2>
+  <p class="sottotitolo">Segni il viaggio appena scarichi; conti e fatture li
+  riprendi sul tablet o sul computer.</p>
+  <div class="coppia">
+    <figure>
+      <img class="finestra" src="immagini/mac-analisi.jpg" width="1180" height="780" loading="lazy"
+           alt="Vector Driver sul Mac: il conto economico annuale con ricavi, costi, margine e indicatori al chilometro">
+      <figcaption>Mac · Analisi</figcaption>
+    </figure>
+    <figure>
+      <img class="tablet" src="immagini/android-tablet-viaggi.webp" width="1600" height="900" loading="lazy"
+           alt="Vector Driver su un tablet Android: la barra laterale con le sezioni e l'elenco dei viaggi del mese">
+      <figcaption>Tablet Android · Viaggi</figcaption>
+    </figure>
   </div>
-  <img class="telefono" src="immagini/analisi.jpg" alt="Il conto economico annuale con ricavi, costi e margine operativo" width="570" height="1240" loading="lazy">
+  <dl class="sincronia">
+    <div><dt>iPhone, iPad e Mac</dt><dd>Gli stessi dati su ogni dispositivo, con il tuo iCloud.</dd></div>
+    <div><dt>Telefoni e tablet Android</dt><dd>Gli stessi dati su ogni dispositivo, con il tuo Google Drive.</dd></div>
+    <div><dt>Da iPhone ad Android, e ritorno</dt><dd>Il backup è lo stesso file: lo salvi da una parte e lo ripristini dall'altra.</dd></div>
+  </dl>
 </section>
 
-<section class="altro">
-  <h2>E tutto il resto</h2>
-  <div class="griglia">
-    <div><h3>Scadenze</h3><p>Revisione, assicurazione, bollo, CQC, visita medica:
-    un promemoria prima e uno il giorno stesso.</p></div>
-    <div><h3>Manutenzione</h3><p>Tagliandi, gomme e riparazioni, con il prossimo
-    intervento a data o a chilometri.</p></div>
-    <div><h3>Clienti</h3><p>Tariffa, termini di pagamento, fatturato e resa media
-    di ogni committente.</p></div>
-    <div><h3>Costi</h3><p>Uscite una tantum e costi fissi ricorrenti, con la
-    quota mensile di ciascuno.</p></div>
-    <div><h3>Esportazioni</h3><p>Ogni elenco in CSV pronto per Excel, da passare
-    al commercialista.</p></div>
-    <div><h3>Backup</h3><p>L'intero archivio in un file, da salvare dove vuoi e
-    ripristinare quando serve.</p></div>
+<section class="fascia resto">
+  <h2>E tutto il resto.</h2>
+  <div class="gruppi">
+    <div>
+      <h3>Il mezzo</h3>
+      <dl>
+        <div><dt>Scadenze</dt><dd>Revisione, assicurazione, bollo, CQC, visita medica:
+        un promemoria prima e uno il giorno stesso.</dd></div>
+        <div><dt>Manutenzione</dt><dd>Tagliandi, gomme e riparazioni, con il prossimo
+        intervento a data o a chilometri.</dd></div>
+      </dl>
+    </div>
+    <div>
+      <h3>L'ufficio</h3>
+      <dl>
+        <div><dt>Clienti</dt><dd>Tariffa, termini di pagamento, fatturato e resa media
+        di ogni committente.</dd></div>
+        <div><dt>Costi</dt><dd>Uscite una tantum e costi fissi ricorrenti, con la
+        quota mensile di ciascuno.</dd></div>
+        <div><dt>Esportazioni</dt><dd>Ogni elenco in CSV pronto per Excel, da passare
+        al commercialista.</dd></div>
+        <div><dt>Backup</dt><dd>L'intero archivio in un file, da salvare dove vuoi e
+        ripristinare quando serve.</dd></div>
+      </dl>
+    </div>
   </div>
 </section>
 
 <section class="riservatezza">
-  <h2>I tuoi dati restano tuoi</h2>
+  <h2>I tuoi dati restano tuoi.</h2>
   <p>Nessun account da creare, nessun nostro server, nessuna pubblicità né
-  tracciamento. I dati stanno sul tuo dispositivo e, se vuoi, si sincronizzano
-  fra iPhone, iPad e Mac attraverso il <strong>tuo</strong> iCloud privato, che
-  noi non possiamo leggere. <a href="privacy/">Leggi l'informativa</a>.</p>
+  tracciamento. I dati stanno sul tuo dispositivo e, se vuoi, nel tuo iCloud o
+  nel tuo Google Drive, dove noi non possiamo leggerli.</p>
+  <p><a href="privacy/">Leggi l'informativa privacy</a></p>
 </section>
 
-<section class="prezzi">
-  <h2>Prova per sette giorni</h2>
-  <p class="lead">L'app è completa dal primo giorno, senza registrazione e senza
-  carta. L'unica cosa riservata agli abbonati è l'emissione dell'XML FatturaPA.</p>
-  <p class="nota-piccola">Finita la prova scegli l'abbonamento mensile o annuale
-  direttamente nell'app: il prezzo nella tua valuta lo vedi lì e sull'App Store
-  prima di pagare. Rinnovo automatico, gestito da Apple. I tuoi dati restano anche
-  senza abbonamento, e il backup si può sempre esportare.</p>
-  <p class="disponibile"><a class="pastiglia" href="https://apps.apple.com/it/app/id6828247352">Scarica dall'App Store</a>
-  <span class="piattaforme">Gratis da scaricare · iPhone · iPad · Mac</span></p>
+<section class="fascia prova">
+  <h2>Provalo sette giorni, gratis.</h2>
+  <p class="sottotitolo">L'app è completa dal primo giorno, senza registrazione e
+  senza carta. L'unica cosa riservata agli abbonati è l'emissione dell'XML FatturaPA.</p>
+  <div class="store centrati"><a class="pulsante" href="https://apps.apple.com/it/app/id6828247352">Scarica dall'App Store</a><span class="pulsante in-arrivo" aria-disabled="true">Presto su Google Play</span></div>
+  <p class="nota">Finita la prova scegli l'abbonamento mensile o annuale
+  direttamente nell'app: il prezzo nella tua valuta lo vedi lì e sullo store
+  prima di pagare. Rinnovo automatico, gestito da Apple o da Google. I tuoi dati
+  restano anche senza abbonamento, e il backup si può sempre esportare.</p>
+</section>
+
+<section class="vector">
+  <h2>Hai un'azienda con più autisti?</h2>
+  <p>Per un'azienda di autotrasporto c'è <strong>Vector</strong>, il gestionale
+  per pianificazione dei viaggi, flotta, autisti, subvettori, carburante,
+  fatturazione e cash flow. Non si scarica: si chiede per email.</p>
+  <p><a class="pulsante secondario" href="mailto:support@lucaporta.dev?subject=Vector%2C%20il%20gestionale%20per%20la%20mia%20azienda">Scrivi a support@lucaporta.dev</a></p>
 </section>
 
 <section class="contatti">
-  <p>Domande? Trovi le risposte nella pagina di <a href="supporto/">assistenza</a>,
-  o scrivi a <a href="mailto:support@lucaporta.dev">support@lucaporta.dev</a>.</p>
+  <p>Domande su Vector Driver? Trovi le risposte nella pagina di
+  <a href="supporto/">assistenza</a>, o scrivi a
+  <a href="mailto:support@lucaporta.dev">support@lucaporta.dev</a>.</p>
 </section>
 </main>
 <footer class="piede">
   <span>© 2026 Luca Porta</span>
-  <nav><a href="privacy/">Privacy</a><a href="termini/">Termini</a><a href="supporto/">Assistenza</a></nav>
+  <nav aria-label="Documenti"><a href="privacy/">Privacy</a><a href="termini/">Termini</a><a href="supporto/">Assistenza</a></nav>
 </footer>
 </body>
 </html>
